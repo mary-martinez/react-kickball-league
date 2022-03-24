@@ -15,6 +15,11 @@ export default function Header() {
             Teams
           </NavLink>
         </li>
+        <li>
+          <NavLink exact to='/players'>
+            Players
+          </NavLink>
+        </li>
       </ul>
     </div>
   );

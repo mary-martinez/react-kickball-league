@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Home from './views/Home/Home';
 import TeamDetails from './views/Teams/TeamDetails';
 import Teams from './views/Teams/Teams';
+import Players from './views/Players/Players';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route path='/teams'>
             <Teams />
+          </Route>
+          <Route path='/players'>
+            <Players />
           </Route>
         </Switch>
       </div>

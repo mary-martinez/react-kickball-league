@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './Teams.css';
 
 export default function TeamDetailsCard({ team, teamPlayers }) {
   return (
@@ -9,7 +11,9 @@ export default function TeamDetailsCard({ team, teamPlayers }) {
       {teamPlayers &&
         teamPlayers.map((player) => (
           <div key={player.id}>
-            <p>{`${player.position}: ${player.name}`}</p>
+            <NavLink to={`/player/${player.id}`}>
+              <p>{`${player.position}: ${player.name}`}</p>
+            </NavLink>
           </div>
         ))
       }
