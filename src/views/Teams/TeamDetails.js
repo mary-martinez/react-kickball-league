@@ -32,8 +32,9 @@ export default function TeamDetails() {
     fetchData();
   }, [teamId]);
   // console.log(teamPlayers);
+  if (loading) return (<div className="loader"></div>);
 
-  if (loading) return (<p>Loading team info</p>);
+  // if (loading) return (<p>Loading team info</p>);
   return (
     <div>
       <TeamDetailsCard {...{ team, teamPlayers }} />

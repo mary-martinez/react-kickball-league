@@ -19,7 +19,8 @@ export default function Teams() {
     }
   }, []);
 
-  if (loading) return (<p>Loading teams</p>);
+  // if (loading) return (<p>Loading teams</p>);
+  if (loading) return (<div className="loader"></div>);
 
   return (
     <div>
