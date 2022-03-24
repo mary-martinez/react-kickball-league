@@ -5,6 +5,7 @@ import Home from './views/Home/Home';
 import TeamDetails from './views/Teams/TeamDetails';
 import Teams from './views/Teams/Teams';
 import Players from './views/Players/Players';
+import PlayerDetails from './views/Players/PlayerDetails';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path='/teams'>
             <Teams />
+          </Route>
+          <Route path='/players/:id'>
+            <PlayerDetails />
           </Route>
           <Route path='/players'>
             <Players />
