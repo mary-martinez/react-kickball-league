@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import TeamDetailsCard from '../../components/Teams/TeamDetailsCard';
-// import { fetchPlayers, fetchTeamPlayers } from '../../services/players';
 import { fetchTeamById } from '../../services/teams';
 
 export default function TeamDetails() {

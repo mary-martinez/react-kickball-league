@@ -12,7 +12,7 @@ export default function Players() {
     };
     fetchData();
   }, []);
-  // console.log(players);
+
   return (
     <div>
       <PlayersCard {...{ players }} />

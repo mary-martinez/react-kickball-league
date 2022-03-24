@@ -11,9 +11,11 @@ export default function TeamDetailsCard({ team, teamPlayers }) {
       {teamPlayers &&
         teamPlayers.map((player) => (
           <div key={player.id}>
-            <Link to={`/players/${player.id}`}>
-              <p>{`${player.position}: ${player.name}`}</p>
-            </Link>
+            <p>{`${player.position}: `}
+              <Link to={`/players/${player.id}`}>
+                {player.name}
+              </Link>
+            </p>
           </div>
         ))
       }

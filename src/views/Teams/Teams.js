@@ -16,11 +16,11 @@ export default function Teams() {
       fetchData();
     } catch (e) {
       setError(e.message);
+      setLoading(false);
     }
   }, []);
 
-  // if (loading) return (<p>Loading teams</p>);
-  if (loading) return (<div className="loader"></div>);
+  if (loading) return (<div aria-label='loader' className="loader"></div>);
 
   return (
     <div>
