@@ -11,30 +11,18 @@ export default function TeamDetails() {
   const [teamPlayers, setTeamPlayers] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   fetchTeamById(teamId).then((data) => {
-  //     setTeam(data);
-  //     setTeamPlayers(data.players);
-  //   });
-  // }, [teamId]);
-
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchTeamById(teamId);
       setTeam(data);
       setTeamPlayers(data.players);
       setLoading(false);
-      // console.log(data);
-      // const data2 = await fetchTeamPlayers(teamId);
-      // const data2 = await fetchPlayers();
-      // console.log(data2);
     };
     fetchData();
   }, [teamId]);
-  // console.log(teamPlayers);
+
   if (loading) return (<div className="loader"></div>);
 
-  // if (loading) return (<p>Loading team info</p>);
   return (
     <div>
       <TeamDetailsCard {...{ team, teamPlayers }} />

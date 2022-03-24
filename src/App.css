@@ -1,3 +1,17 @@
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: gray;
+}
+li {
+  font-size: 1.5rem;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 .App {
   text-align: center;
 }
@@ -36,7 +50,14 @@
     transform: rotate(360deg);
   }
 }
+.page-content {
+  margin-top: 10%;
+}
+.active {
+  background-color: white;
+  text-decoration: none;
 
+}
 .loader {
   font-size:48px;
   margin-left: 48%;

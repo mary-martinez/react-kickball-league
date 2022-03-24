@@ -6,21 +6,21 @@ export default function Header() {
     <div>
       <ul>
         <li>
-          <NavLink exact to='/'>
+          <NavLink exact to='/' style={{ textDecoration: 'none' }}>
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink exact to='/teams'>
+          <NavLink exact to='/teams' style={{ textDecoration: 'none' }}>
             Teams
           </NavLink>
         </li>
         <li>
-          <NavLink exact to='/players'>
+          <NavLink exact to='/players' style={{ textDecoration: 'none' }}>
             Players
           </NavLink>
         </li>
       </ul>
-    </div>
+    </div >
   );
 }
