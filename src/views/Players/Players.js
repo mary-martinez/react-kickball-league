@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import PlayersCard from '../../components/Players/PlayersCard';
 import { fetchPlayers } from '../../services/players';
 
 export default function Players() {
@@ -11,16 +12,10 @@ export default function Players() {
     };
     fetchData();
   }, []);
-  console.log(players);
+  // console.log(players);
   return (
     <div>
-      {players.map((player) => (
-        <div key={player.id}>
-          <h3>{player.name}</h3>
-          <p>{`${player.position} for ${player.teams.name}`}</p>
-
-        </div>
-      ))}
+      <PlayersCard {...{ players }} />
     </div>
   );
 }
