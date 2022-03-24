@@ -7,7 +7,7 @@ export default function TeamDetailsCard({ team, teamPlayers }) {
     <div>
       <h1>{team.name}</h1>
       <p className='city'>{`${team.city}, ${team.state}`}</p>
-      {teamPlayers < 1 && <p>No players yet</p>}
+      {teamPlayers.length < 1 && <p>No players yet</p>}
       {teamPlayers &&
         teamPlayers.map((player) => (
           <div key={player.id}>

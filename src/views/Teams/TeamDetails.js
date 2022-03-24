@@ -10,24 +10,25 @@ export default function TeamDetails() {
   const [team, setTeam] = useState({});
   const [teamPlayers, setTeamPlayers] = useState([]);
 
+  // useEffect(() => {
+  //   fetchTeamById(teamId).then((data) => {
+  //     setTeam(data);
+  //     setTeamPlayers(data.players);
+  //   });
+  // }, [teamId]);
+
   useEffect(() => {
-    fetchTeamById(teamId).then((data) => {
+    const fetchData = async () => {
+      const data = await fetchTeamById(teamId);
       setTeam(data);
       setTeamPlayers(data.players);
-    });
+      // console.log(data);
+      // const data2 = await fetchTeamPlayers(teamId);
+      // const data2 = await fetchPlayers();
+      // console.log(data2);
+    };
+    fetchData();
   }, [teamId]);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const data = await fetchTeamById(teamId);
-  //     setTeam(data);
-  //     // console.log(data);
-  //     // const data2 = await fetchTeamPlayers(teamId);
-  //     // const data2 = await fetchPlayers();
-  //     // console.log(data2);
-  //   };
-  //   fetchData();
-  // }, [teamId]);
   // console.log(teamPlayers);
 
   return (
