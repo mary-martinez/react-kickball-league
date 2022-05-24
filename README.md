@@ -1,25 +1,21 @@
-# Alchemy React Base Template
+Kickball teams 
+0:
+city: "Portland"
+created_at: "2021-11-22T20:08:18+00:00"
+id: 2
+name: "Stumptown Lumberjacks"
+state: "OR"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Single team object
+city: "Mt. Hood"
+created_at: "2021-11-22T20:10:16+00:00"
+id: 4
+name: "Mt. Hoodies"
+state: "OR"
 
-Use this template for all your "from scratch" deliverables. To start, simply run
-
-- `npm install`
-- `npm start`
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Player object
+created_at: "2021-11-22T20:12:14+00:00"
+id: 2
+name: "Hans Olo"
+position: "Catcher"
+team_id: 1
